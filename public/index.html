@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Superior School, Bhakkar</title>
+<meta name="description" content="Superior School in Bhakkar: fees, teachers and student life. Ask our voice assistant in Urdu.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Noto+Nastaliq+Urdu:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { board: '#1B3A32', chalk: '#EEF2EC', bus: '#F5B700', ink: '#14201C', rule: '#BFD3E6' },
+  fontFamily: { display: ['"Bricolage Grotesque"', 'system-ui', 'sans-serif'], urdu: ['"Noto Nastaliq Urdu"', 'serif'] }
+}}}
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Bricolage Grotesque', system-ui, sans-serif; background: #EEF2EC; color: #14201C; }
+  .ruled { background-image: repeating-linear-gradient(to bottom, transparent 0 47px, #BFD3E6 47px 48px); }
+  .margin-line { box-shadow: inset 3px 0 0 #E8908A; }
+  .urdu { font-family: 'Noto Nastaliq Urdu', serif; line-height: 2.1; direction: rtl; text-align: right; }
+  @keyframes pulse-ring { 0% { box-shadow: 0 0 0 0 rgba(245,183,0,.7) } 100% { box-shadow: 0 0 0 22px rgba(245,183,0,0) } }
+  .recording { animation: pulse-ring 1.2s infinite; background: #D94B3F !important; color: #fff !important; }
+  @media (prefers-reduced-motion: reduce) { .recording { animation: none; } html { scroll-behavior: auto; } }
+  :focus-visible { outline: 3px solid #F5B700; outline-offset: 3px; }
+</style>
+</head>
+<body class="antialiased">
+
+<header class="sticky top-0 z-30 bg-chalk/90 backdrop-blur border-b border-ink/10" style="padding-top:env(safe-area-inset-top)">
+  <div class="mx-auto max-w-6xl flex items-center justify-between px-5 h-14">
+    <a href="#top" class="font-extrabold tracking-tight text-lg">Superior School</a>
+    <nav class="hidden sm:flex gap-6 text-sm font-semibold">
+      <a href="#fees" class="hover:underline">Fees</a>
+      <a href="#teachers" class="hover:underline">Teachers</a>
+      <a href="#life" class="hover:underline">Student life</a>
+      <a href="#visit" class="hover:underline">Visit</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero: a ruled notebook page -->
+  <section class="ruled margin-line bg-white">
+    <div class="mx-auto max-w-6xl px-5 pt-14 pb-20 sm:pt-24 sm:pb-28 pl-8 sm:pl-12">
+      <p class="font-semibold text-board/70 mb-4">Bhakkar, Punjab</p>
+      <h1 class="font-extrabold tracking-tighter leading-[0.95] text-[clamp(3rem,11vw,8.5rem)] max-w-4xl">Learn well.<br>Ask anything.</h1>
+      <p class="mt-8 max-w-xl text-lg sm:text-xl leading-relaxed text-ink/80">Superior School teaches first and second year with teachers you can reach. Not sure about fees or classes? Tap the yellow microphone and ask in Urdu.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <button data-open-chat class="bg-board text-chalk font-semibold px-6 py-3.5 rounded-full">Ask in Urdu</button>
+        <a href="#fees" class="border-2 border-board font-semibold px-6 py-3 rounded-full">See fees</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fees -->
+  <section id="fees" class="bg-board text-chalk">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+      <h2 class="font-extrabold tracking-tight text-4xl sm:text-5xl">Fees for each year</h2>
+      <div class="mt-10 grid sm:grid-cols-2 gap-px bg-chalk/20 border border-chalk/20">
+        <div class="bg-board p-8 sm:p-10">
+          <p class="text-chalk/70 font-semibold">First year</p>
+          <p class="mt-3 font-extrabold tracking-tighter text-6xl sm:text-7xl">Rs 50,000</p>
+        </div>
+        <div class="bg-board p-8 sm:p-10">
+          <p class="text-chalk/70 font-semibold">Second year</p>
+          <p class="mt-3 font-extrabold tracking-tighter text-6xl sm:text-7xl text-bus">Rs 100,000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Teachers -->
+  <section id="teachers" class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+    <h2 class="font-extrabold tracking-tight text-4xl sm:text-5xl">Who teaches you</h2>
+    <div class="mt-10 grid sm:grid-cols-2 gap-10">
+      <div class="border-t-4 border-ink pt-5">
+        <h3 class="text-2xl font-bold">First year</h3>
+        <ul class="mt-4 space-y-2 text-xl"><li>Sir Fakhar</li><li>Sir Ali</li></ul>
+      </div>
+      <div class="border-t-4 border-bus pt-5">
+        <h3 class="text-2xl font-bold">Second year</h3>
+        <ul class="mt-4 space-y-2 text-xl"><li>Sir Hassan</li><li>Sir Hussain</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Student life -->
+  <section id="life" class="bg-bus">
+    <div class="mx-auto max-w-6xl px-5 py-16 sm:py-24">
+      <h2 class="font-extrabold tracking-tight text-4xl sm:text-5xl">Beyond the classroom</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-8">
+        <div><h3 class="text-2xl font-bold">Sports Gala</h3><p class="mt-2 text-lg text-ink/80">Teams from every class compete in one big sports event.</p></div>
+        <div><h3 class="text-2xl font-bold">Northern Area trips</h3><p class="mt-2 text-lg text-ink/80">Travel to the mountains with your classmates and teachers.</p></div>
+        <div><h3 class="text-2xl font-bold">Qawali Night</h3><p class="mt-2 text-lg text-ink/80">An evening of live music for the whole school.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" class="mx-auto max-w-6xl px-5 py-16 sm:py-24 pb-40">
+    <h2 class="font-extrabold tracking-tight text-4xl sm:text-5xl">Questions before you join?</h2>
+    <p class="mt-5 max-w-xl text-lg text-ink/80">Record your question in Urdu and hear the answer straight away. The assistant knows our fees, teachers and activities.</p>
+    <button data-open-chat class="mt-8 bg-ink text-chalk font-semibold px-6 py-3.5 rounded-full">Ask in Urdu</button>
+  </section>
+</main>
+
+<footer class="border-t border-ink/10 px-5 py-8 text-sm text-ink/70" style="padding-bottom:calc(2rem + env(safe-area-inset-bottom))">
+  <div class="mx-auto max-w-6xl">Superior School, Bhakkar</div>
+</footer>
+
+<!-- Chat -->
+<button id="chat-fab" aria-label="Open voice assistant" class="fixed z-40 right-5 w-16 h-16 rounded-full bg-bus text-ink shadow-lg flex items-center justify-center" style="bottom:calc(1.25rem + env(safe-area-inset-bottom))">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+</button>
+
+<section id="chat-panel" role="dialog" aria-label="Voice assistant" hidden class="fixed z-50 inset-x-0 bottom-0 sm:inset-x-auto sm:right-5 sm:bottom-5 sm:w-[24rem] bg-white sm:rounded-2xl rounded-t-2xl shadow-2xl border border-ink/10 flex flex-col max-h-[85dvh]" style="padding-bottom:env(safe-area-inset-bottom)">
+  <div class="flex items-center justify-between px-5 py-4 border-b border-ink/10">
+    <h2 class="font-bold">Ask Superior School</h2>
+    <button id="chat-close" aria-label="Close" class="w-9 h-9 rounded-full hover:bg-ink/5 text-xl leading-none">×</button>
+  </div>
+  <div id="log" class="flex-1 overflow-y-auto px-5 py-4 space-y-3 min-h-[12rem]" aria-live="polite">
+    <p class="urdu bg-chalk rounded-xl px-4 py-2">السلام علیکم! مائیک دبائیں اور اردو میں اپنا سوال پوچھیں۔</p>
+  </div>
+  <div class="px-5 pb-5 pt-3 flex flex-col items-center gap-2 border-t border-ink/10">
+    <button id="mic" class="w-16 h-16 rounded-full bg-bus text-ink flex items-center justify-center" aria-label="Start recording">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+    </button>
+    <p id="status" class="text-sm text-ink/70">Tap to record, tap again to send</p>
+  </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
